@@ -1,6 +1,8 @@
 # AI-Sidewalk
 The AI Sidewalk code repo. The code utilized in the articles can be found here.
+<p align="center">
 ![Image of AI Sidewalk](https://github.com/ShantanuPhadke/AI-Sidewalk/blob/master/architectural-design-architecture-buildings-990094.jpg)
+</p>
 
 ## (1) Categorical Classification on Wine Data (06/22/19) | 
 ### Instructions to Run Code:
