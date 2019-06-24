@@ -8,9 +8,9 @@ The AI Sidewalk code repo. The code utilized in the articles can be found here.
 <details>
   <h4>Instructions to Run Code:</h4>
   <p>
-  Go into the 1_Categorical_Classification folder
-  python3 data_splitter.py
-  python3 pipeline.py
+  Go into the 1_Categorical_Classification folder<br>
+  python3 data_splitter.py<br>
+  python3 pipeline.py<br>
   <p>
 </details>  
   
