@@ -14,7 +14,7 @@ The AI Sidewalk code repo. The code utilized in the articles can be found here.
   <p>
 </details>  
 
-### (4) Binary SVM in 50 Lines! (07/22/19) | 
+### (4) Binary SVM from Scratch! (07/22/19) | 
 <details>
   <h4>Instructions to Run Code:</h4>
   <p>
