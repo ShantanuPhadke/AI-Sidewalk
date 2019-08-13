@@ -7,16 +7,6 @@ import jsonpickle
 app = Flask(__name__)
 app.secret_key = 'super secret key'
 
-#app.config["SESSION_FILE_DIR"] = mkdtemp()
-#app.config["SESSION_PERMANENT"] = False
-#app.config["SESSION_TYPE"] = "filesystem"
-#Session(app)
-
-current_board = TicTacToeBoard()
-player_symbol = 'X'
-ai_symbol = 'O'
-difficulty = None
-
 
 @app.route('/')
 def main():
@@ -97,7 +87,7 @@ def hard_ai_player_turn():
 	# Strategy #2 - return minimax based 
 	# positions for the new moves
 	current_board = jsonpickle.decode(session.get('current_board'))
-	ai_player =  session.get('ai_player')
+	ai_symbol =  session.get('ai_symbol')
 	return minimax(current_board, ai_symbol)
 
 
