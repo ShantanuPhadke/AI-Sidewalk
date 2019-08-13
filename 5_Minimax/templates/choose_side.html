@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>
+      Tic Tac Toe
+    </title>
+
+    <link rel="stylesheet" href="static/colors.css"/>
+    <link rel="stylesheet" href="static/stylish.css"/>
+
+  </head>
+
+  <body>
+  	<div class="container">
+  		<h1 class="bigtitle"><span class="blue">Tic</span> Tac <span class="red">Toe</span></h1>
+      	<br/><br/>
+      	<h2>
+      		Instructions:
+      	</h2>
+      	<h4> (1) Pick a side to play as. In Tic-Tac-Toe the only two options are 'X' and 'O'. If you pick 'X' you will go first. If you pick 'O' you will go second. The AI will play as the other side. </h3>
+      	<h4> (2) Pick a difficulty level. 'Easy' will just make random moves. 'Hard' employs Minimax and should be impossible to beat!</h3>
+      	<h4> (3) Click 'Start Game'. On the next page simply enter to row and column you want to place your marker in and click enter.</h3><br/><br/>
+      	<form action="choose_side" method="post">
+      		<h3> Choose your Side: </h3>
+	      	<select name="side">
+	  			<option value="X">X</option>
+	  			<option value="O">O</option>
+			</select>
+			<br></br>
+			<h3> Choose your difficulty: </h3>
+			<select name="difficulty">
+				<option value="easy">Easy</option>
+				<option value="hard">Hard</option>
+			</select>
+			<br/>
+			<br/>
+			<button name="choose_side_button" type="submit">Start Game!</button>
+		</form>
+  	</div>
+  </body>
+</html>
