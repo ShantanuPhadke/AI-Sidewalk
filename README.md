@@ -18,9 +18,21 @@ The AI Sidewalk code repo. The code utilized in the articles can be found here.
 <details>
   <h4>Instructions to Run Code:</h4>
   <p>
-    Go into the 4_Coding_Binary_SVM<br>
+    Go into the 4_Coding_Binary_SVM Folder<br>
     jupyter notebook<br>
     Run the code blocks in the BinarySVM notebook<br>
   </p>
+</details>
+
+### (5) All about Minimax (via Tic-Tac-Toe)! () | 
+<details>
+  <p>
+    Go into 5_Minimax Folder<br/>
+    pip install -r requirements.txt<br/>
+    export FLASK_APP=TicTacToeFlask.py<br/>
+    flask run<br/>
+  </p>
+  OR
+  <p>Alternatively, check out the demo @ https://calm-brook-53734.herokuapp.com/ !</p>
 </details>
   
