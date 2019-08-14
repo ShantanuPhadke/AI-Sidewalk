@@ -24,7 +24,7 @@ The AI Sidewalk code repo. The code utilized in the articles can be found here.
   </p>
 </details>
 
-### (5) All about Minimax (via Tic-Tac-Toe)! () | 
+### (5) All about Minimax (via Tic-Tac-Toe)! (08/14/19) | 
 <details>
   <p>
     Go into 5_Minimax Folder<br/>
