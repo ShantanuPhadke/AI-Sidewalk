@@ -40,5 +40,5 @@ The AI Sidewalk code repo. The code utilized in the articles can be found here.
   <p>Alternatively, check out the demo @ https://calm-brook-53734.herokuapp.com/ !</p>
 </details>
 
-### (6) Natural Language Processing: A Crash Course! | https://tinyurl.com/y6a9zybe
+### (6) Natural Language Processing: A Crash Course! (09/12/19)| https://tinyurl.com/y6a9zybe
   
