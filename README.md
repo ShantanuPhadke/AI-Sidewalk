@@ -14,6 +14,10 @@ The AI Sidewalk code repo. The code utilized in the articles can be found here.
   <p>
 </details>  
 
+### (2) Delving into Binary SVMs (Part 1) (06/30/19) | https://tinyurl.com/yxrul5jv
+
+### (3) AI Sidewalk #3: Delving Into Binary SVMs(Part 2) (07/10/19) | https://tinyurl.com/y5m8f5pl
+
 ### (4) Binary SVM from Scratch! (07/22/19) | https://tinyurl.com/yy7eurwa
 <details>
   <h4>Instructions to Run Code:</h4>
@@ -35,4 +39,6 @@ The AI Sidewalk code repo. The code utilized in the articles can be found here.
   OR
   <p>Alternatively, check out the demo @ https://calm-brook-53734.herokuapp.com/ !</p>
 </details>
+
+### (6) Natural Language Processing: A Crash Course! | https://tinyurl.com/y6a9zybe
   
