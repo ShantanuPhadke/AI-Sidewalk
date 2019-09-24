@@ -7,7 +7,7 @@ app.config['SECRET_KEY'] = '8479fd7bef4ebf6c264fd36063af37b8'
 @app.route("/")
 @app.route("/")
 def home():
-	return "<h1> Homepage biatch! </h1>"
+	return "<h1> Homepage! </h1>"
 
 if __name__ == '__main__':
 	app.run(debug=True, port=8000)
