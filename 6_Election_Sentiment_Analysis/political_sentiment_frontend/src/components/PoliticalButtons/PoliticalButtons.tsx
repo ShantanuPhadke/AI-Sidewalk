@@ -4,8 +4,15 @@ import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    button: {
+    democratButton: {
       margin: theme.spacing(1),
+      backgroundColor: "#458071",
+      color: '#8AFFE2',
+    },
+    republicanButton: {
+      margin: theme.spacing(1),
+      backgroundColor: "#8AFFE2",
+      color: '#458071',
     },
     input: {
       display: 'none',
@@ -18,10 +25,10 @@ export default function PoliticalButtons() {
 
     return (
         <div>
-            <Button variant="contained" color="primary" className={classes.button}>
+            <Button variant="contained" className={classes.democratButton}>
                 Democrats
             </Button>
-            <Button variant="contained" color="secondary" className={classes.button}>
+            <Button variant="contained" className={classes.republicanButton}>
                 Republicans
             </Button>
         </div>

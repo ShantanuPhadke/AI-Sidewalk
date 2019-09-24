@@ -1,12 +1,13 @@
 .App {
   text-align: center;
   color: #40514e;
-  background-color:#eceff1;
+  background-color:#31CCA5;
   position: fixed;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll
 }
 
 .App-logo {

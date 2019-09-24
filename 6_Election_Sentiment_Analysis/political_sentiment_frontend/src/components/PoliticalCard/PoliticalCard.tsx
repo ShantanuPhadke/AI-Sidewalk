@@ -10,7 +10,7 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red, deepPurple } from '@material-ui/core/colors';
+import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     card: {
       maxWidth: 345,
-      backgroundColor: deepPurple[900],
+      backgroundColor: '#1F8067',
     },
     media: {
       height: 0,
@@ -40,9 +40,22 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: red[500],
     },
     title: {
-       color: 'white',
+       color: '#8AFFE2',
        fontSize: '16px',
        fontWeight: 'bold',
+    },
+    subheader: {
+        color: '#8AFFE2',
+        fontSize: '14px',
+        fontWeight: 'normal',
+    },
+    info: {
+        color: 'white',
+        fontSize: '11px',
+        fontWeight: 'normal',
+    },
+    icon: {
+        color: '#31CCA5',
     },
   }),
 );
@@ -60,6 +73,7 @@ export default function PoliticalinsCard() {
       <CardHeader
         classes={{
             title: classes.title,
+            subheader: classes.subheader,
         }}
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
@@ -80,22 +94,22 @@ export default function PoliticalinsCard() {
         title="Paella dish"
       />
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography className={classes.info} variant="body2" color="textSecondary" component="p">
           This impressive paella is a perfect party dish and a fun meal to cook together with your
           guests. Add 1 cup of frozen peas along with the mussels, if you like.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton className={classes.icon} aria-label="add to favorites">
           <FavoriteIcon />
         </IconButton>
-        <IconButton aria-label="share">
+        <IconButton className={classes.icon} aria-label="share">
           <ShareIcon />
         </IconButton>
         <IconButton
-          className={clsx(classes.expand, {
+          className={[clsx(classes.expand, {
             [classes.expandOpen]: expanded,
-          })}
+          }), classes.icon].join(' ')}
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"

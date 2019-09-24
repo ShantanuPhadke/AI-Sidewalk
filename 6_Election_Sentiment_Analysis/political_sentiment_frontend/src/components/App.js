@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.scss';
 import withStyles from '@material-ui/styles/withStyles';
+import Grid from '@material-ui/core/Grid';
 
 import PoliticalButtons from './PoliticalButtons/PoliticalButtons.tsx';
 import PoliticalCard from './PoliticalCard/PoliticalCard.tsx';
@@ -8,12 +9,17 @@ import PoliticalCard from './PoliticalCard/PoliticalCard.tsx';
 
 const styles = theme => ({
   politicalButtons: {
-    position: 'fixed',
-    left: '50%',
-    bottom: '20px',
-    transform: 'translate(-50%, -50%)',
-    margin: '0 auto'
+    position: 'relative',
+    top: '1%',
+    margin: '0 auto',
+  },
+
+  politicalCards: {
+    //overflowY: 'scroll',
+    position: 'relative',
+    top: '5%',
   }
+
 })
 
 class App extends React.Component {
@@ -21,12 +27,20 @@ class App extends React.Component {
     const { classes } = this.props;
     return (
       <div className="App">
-        <h1> Political Sentiment Dashboard Time! (Almost) </h1>
-        <div class={classes.politicalCards}>
-          <PoliticalCard/>
-        </div>
+        <div><h1> Political Sentiment Dashboard Time! (Almost) </h1></div>
         <div className={classes.politicalButtons}>
           <PoliticalButtons/>
+        </div>
+        <div class={classes.politicalCards}>
+          <Grid item xs={12}>
+            <Grid container justify="center" spacing={2}>
+              {[0, 1, 2].map(value => (
+                <Grid key={value} item>
+                  <PoliticalCard/>
+                </Grid>
+              ))}
+            </Grid>
+          </Grid>
         </div>
       </div>
     )
