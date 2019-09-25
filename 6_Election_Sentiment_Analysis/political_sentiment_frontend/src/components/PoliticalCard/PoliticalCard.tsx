@@ -60,9 +60,13 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export default function PoliticalinsCard() {
+type PoliticalCardProp =  { initials: React.ReactNode; name: React.ReactNode; };
+
+export default function PoliticalinsCard(props: PoliticalCardProp) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
+
+
 
   const handleExpandClick = () => {
     setExpanded(!expanded);
@@ -77,7 +81,7 @@ export default function PoliticalinsCard() {
         }}
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            R
+            { props.initials }
           </Avatar>
         }
         action={
@@ -85,7 +89,7 @@ export default function PoliticalinsCard() {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
+        title={ props.name }
         subheader="September 14, 2016"
       />
       <CardMedia
