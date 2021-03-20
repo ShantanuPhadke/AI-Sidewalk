@@ -53,7 +53,7 @@ Flask-Cors==3.0.4
 Flask-Session==0.3.1
 Flask-SocketIO==3.1.2
 Flask-SQLAlchemy==2.4.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 gunicorn==19.9.0
 numpy==1.16.1
 jsonpickle==1.2 
